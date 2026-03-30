@@ -105,7 +105,63 @@ Claude will walk you through the process step-by-step:
 
 ---
 
-## Tips for Best Results
+## Python CLI
+
+Generate visual HTML, Markdown, or JSON reports from JTBD analysis data.
+
+### Install
+
+```bash
+pip install -e .
+```
+
+### Usage
+
+```bash
+# Generate a visual HTML report (opens in browser)
+jtbd examples/sample-data.json --open
+
+# Generate Markdown
+jtbd examples/sample-data.json -f markdown -o report.md
+
+# Generate enriched JSON with computed scores
+jtbd examples/sample-data.json -f json -o report.json
+```
+
+### Use as a Library
+
+```python
+from jtbd import Job, JTBDAnalysis, render_html
+
+analysis = JTBDAnalysis(
+    title="My JTBD Analysis",
+    product_context="B2B SaaS platform",
+    jobs=[
+        Job(
+            situation="preparing a quarterly review",
+            action="see team progress at a glance",
+            outcome="present confidently without manual data gathering",
+            category="functional",
+            importance=9, satisfaction=3,
+            evidence='"I spend 3 hours pulling numbers from 5 tools."'
+        ),
+    ],
+)
+
+html = render_html(analysis, author="Your Name")
+```
+
+---
+
+## Output Formats
+
+| Format | Command | What You Get |
+|---|---|---|
+| **HTML** | `jtbd data.json` | Visual report with charts, cards, and scoring |
+| **Markdown** | `jtbd data.json -f markdown` | Clean tables for docs/PRDs |
+| **JSON** | `jtbd data.json -f json` | Enriched data with computed opportunity scores |
+
+---
 
 1. **Keep personas.md updated** — the skill connects new jobs to existing personas
 2. **Focus on jobs, not solutions** — "I need a hole" not "Hire a drill"
@@ -118,9 +174,29 @@ Claude will walk you through the process step-by-step:
 
 ```
 jtbd-extractor/
-├── README.md       # This file
-└── SKILL.md        # Claude Code skill definition
+├── README.md                        # This file
+├── SKILL.md                         # Claude Code skill definition
+├── pyproject.toml                   # Python package config
+├── jtbd-overview.html               # Interactive exec overview visual
+├── jtbd/                            # Python package
+│   ├── __init__.py
+│   ├── models.py                    # Job, Translation, JTBDAnalysis data models
+│   ├── renderer.py                  # HTML & Markdown report generators
+│   └── cli.py                       # CLI entry point
+├── examples/
+│   ├── sample-data.json             # Sample input (JSON)
+│   ├── sample-output.md             # Sample output (Markdown)
+│   └── sample-output.html           # Sample output (visual HTML)
+└── assets/
+    └── jtbd-overview.png            # README screenshot
 ```
+
+## Tips for Best Results
+
+1. **Keep personas.md updated** — the skill connects new jobs to existing personas
+2. **Focus on jobs, not solutions** — "I need a hole" not "Hire a drill"
+3. **Look for emotional and social jobs** — they often drive decisions more than functional ones
+4. **Validate scores quantitatively** — low-confidence scores from small samples need survey validation
 
 Output is saved to: `discovery/outputs/jtbd-[persona]-[YYYY-MM-DD].md`
 
