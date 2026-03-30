@@ -96,7 +96,7 @@ Claude will walk you through the process step-by-step:
 
 ## Framework Reference
 
-**Jobs-to-be-Done** (Christensen / Ulwick):
+**Jobs-to-be-Done**:
 - People don't buy products — they hire them to do a job
 - Jobs are stable; solutions change
 - **Opportunity = Importance + (Importance - Satisfaction)**
