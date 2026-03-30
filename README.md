@@ -2,6 +2,8 @@
 
 > Turn raw research into Jobs-to-be-Done statements showing what users are really trying to accomplish — reframing feature requests as underlying needs and uncovering innovation opportunities.
 
+![JTBD Extractor Overview](assets/jtbd-overview.png)
+
 [![Claude Code Skill](https://img.shields.io/badge/Claude_Code-Skill-blueviolet)](#installation)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
