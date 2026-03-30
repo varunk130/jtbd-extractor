@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+examples/generated-*
+screenshot.js
+screenshot.py
+node_modules/
