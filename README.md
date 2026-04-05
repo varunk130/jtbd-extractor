@@ -177,7 +177,8 @@ jtbd-extractor/
 ├── README.md                        # This file
 ├── SKILL.md                         # Claude Code skill definition
 ├── pyproject.toml                   # Python package config
-├── jtbd-overview.html               # Interactive exec overview visual
+├── docs/
+│   └── jtbd-overview.html       # Interactive exec overview visual
 ├── jtbd/                            # Python package
 │   ├── __init__.py
 │   ├── models.py                    # Job, Translation, JTBDAnalysis data models
