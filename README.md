@@ -163,13 +163,6 @@ html = render_html(analysis, author="Your Name")
 
 ---
 
-1. **Keep personas.md updated** — the skill connects new jobs to existing personas
-2. **Focus on jobs, not solutions** — "I need a hole" not "Hire a drill"
-3. **Look for emotional and social jobs** — they often drive decisions more than functional ones
-4. **Validate scores quantitatively** — low-confidence scores from small samples need survey validation
-
----
-
 ## File Structure
 
 ```
