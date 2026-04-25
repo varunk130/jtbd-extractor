@@ -1,6 +1,6 @@
 # 🎯 JTBD Extractor
 
-> Turn raw research into Jobs-to-be-Done statements that reveal what users are really trying to accomplish — reframing feature requests as underlying needs and uncovering innovation opportunities.
+> Turn raw research into Jobs-to-be-Done statements that reveal what users are really trying to accomplish — reframing feature requests as underlying needs and surfacing innovation opportunities worth pursuing.
 
 ![JTBD Extractor Overview](assets/jtbd-overview.png)
 
