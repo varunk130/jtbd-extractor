@@ -58,7 +58,7 @@ Claude will walk you through the process step-by-step:
 3. **Identifies jobs** — extracts what users are really trying to accomplish
 4. **Formats as JTBD** — structures each job as `When / I want to / So I can`
 5. **Categorizes** — sorts into Functional, Emotional, and Social jobs
-6. **Scores opportunities** — rates importance vs. satisfaction to find gaps
+6. **Scores opportunities** — scores importance against satisfaction to surface unmet needs
 
 ---
 
