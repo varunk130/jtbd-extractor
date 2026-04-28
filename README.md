@@ -202,4 +202,4 @@ MIT — use it however you want.
 
 ---
 
-Built by [varunk130](https://github.com/varunk130)
+Built by [Varun Kulkarni](https://github.com/varunk130) — part of a portfolio of AI agent systems for product teams.
