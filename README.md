@@ -1,5 +1,7 @@
 # 🎯 JTBD Extractor
 
+> Audio interview input is scaffolded — see [docs/AUDIO_INPUT_MODE.md](docs/AUDIO_INPUT_MODE.md). Today the skill expects clean transcript text; the audio adapter seam is documented for later wiring.
+
 > Turn raw research into Jobs-to-be-Done statements that reveal what users are really trying to accomplish — reframing feature requests as underlying needs and surfacing innovation opportunities worth pursuing.
 
 ![JTBD Extractor Overview](assets/jtbd-overview.png)
